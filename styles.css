@@ -1,0 +1,198 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Varela Round", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+body{
+  background-color: #250c24;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.background{
+  width: 100%;
+  height: 100vh;
+  background: url(/photo_2024-08-24_20-27-14.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* filter: blur(0.3rem); */
+}
+header{
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  justify-content:space-between;
+  padding: 45px 12%;
+  display: flex;
+  align-items: center;
+}
+header>nav>a{
+  position: relative;
+  margin: 0px 15px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 400;
+}
+header>form{
+  border: 3px solid #fff;
+  padding: 10px;
+  border-radius: 7px;
+}
+header>form>input{
+  border: none;
+  font-size: 20px;
+  background-color: transparent;
+  color: #fff;
+  outline: none;
+}
+header>form>input::placeholder{
+  color: #fff;
+}
+header>form>button{
+  background-color: transparent;
+  border: none;
+}
+header>form>button>i{
+  font-size: 20px;
+  color: #fff;
+}
+
+.container{
+  width: 75%;
+  height: 550px;
+  background: url(/photo_2024-08-24_20-27-14.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 20%;
+  left: 13%;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+}
+.container>.item{
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 100px;
+  color: #fff;
+  backdrop-filter: brightness(90%);
+}
+.container>.item>.logo{
+  font-weight: 700;
+  font-size: 30px;
+}
+.container>.item>.text-field{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.container>.item>.text-field>p{
+  width: 54%;
+}
+.container>.item>.text-field>ul{
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+.container>.item>.text-field>ul>li{
+  font-size: 35px;
+  transition: all .1s ease-in-out;
+}
+.container>.item>.text-field>ul>li:hover{
+  transform: translateY(-10px);
+  transition: all .1s ease-in-out;
+}
+.container>.log-field{
+  width: calc(100% - 60%);
+  backdrop-filter: blur(4px) brightness(90%);
+  height: 100%;
+}
+.container>.log-field>.form{
+  width: 100%;
+  height: 100%;
+  display: block;
+  text-align: center;
+  padding: 6rem;
+  position: absolute;
+}
+.container>.log-field>.form>.Email{
+  width: 100%;
+  position: relative;
+  margin-top: 3.5rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid #fff;
+  padding: 5px 0px;
+  color: #fff;
+}
+
+.container>.log-field>.form>.Email>.label{
+  position: absolute;
+  left: 0;
+  transition: all .3s ease-in-out;
+}
+.container>.log-field>.form>.Email>input{
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  font-size: 20px;
+  color: #fff;
+}
+.container>.log-field>.form>.Email>input:focus + .label{
+  transform: translateY(-30px);
+  transition: all .3s ease-in-out;
+}
+
+.container>.log-field>.form>.remember{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0px;
+}
+.container>.log-field>.form>.remember>.check{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.container>.log-field>.form>.remember>.check>input{
+  accent-color: #fff;
+  width: 15px;
+  height: 15px;
+}
+.container>.log-field>.form>.remember>a, .check>label{
+  font-size: 13px;
+  text-decoration: none;
+  color: #fff;
+}
+.container>.log-field>.form>.remember>a:hover{
+  text-decoration: underline;
+}
+.container>.log-field>.form>button{
+  width: 100%;
+  background-color: rgb(171, 23, 79);
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+  border: 1px solid rgb(171, 23, 79);
+}
+.container>.log-field>.form>.create{
+  margin-top: 20px;
+  color: #fff;
+  .login{
+    text-decoration: none;
+    color: #fff;
+  }
+  .login:hover{
+    text-decoration: underline;
+  }
+}
+
